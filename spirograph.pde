@@ -13,9 +13,9 @@ void setup() {
 void draw() {
   background(255);
 
-  a = 200;
+  a = mouseX;
   b = 100;
-  h = 200;
+  h = mouseY;
 
   for (int i=1; i<361; i+=1) {
     t = radians(i);
