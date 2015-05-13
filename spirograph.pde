@@ -17,7 +17,7 @@ void draw() {
   b = 100;
   h = mouseY;
 
-  for (int i=1; i<361; i+=1) {
+  for (int i=1; i<181; i+=1) {
     t = radians(i);
     ot = radians(i-1);
     d = a*t;
@@ -34,5 +34,5 @@ void draw() {
 }
 
 void keyPressed(){
-  save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".png");
+  save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".tiff");
 }
