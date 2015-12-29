@@ -18,4 +18,4 @@ Then simply click run and move your mouse across the window!
 
 ## Save it!
 
-If you want to save an image, just press any key while processing is running and it will save the frame under `images/export`.
+If you want to save an image, just press any key while processing is running and it will save the frame under `export`.
