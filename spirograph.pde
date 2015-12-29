@@ -24,7 +24,7 @@ void draw() {
     od = a*ot;
 
     oxpos = (a-b)*cos(ot)+h*cos(od);
-    oypos = (a-b)*sin(ot)+h*sin(od);    
+    oypos = (a-b)*sin(ot)+h*sin(od);
 
     xpos = (a-b)*cos(t)+h*cos(d);
     ypos = (a-b)*sin(t)+h*sin(d);
@@ -34,5 +34,5 @@ void draw() {
 }
 
 void keyPressed(){
-  save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".tiff");
+  save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".jpg");
 }
