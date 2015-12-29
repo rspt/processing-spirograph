@@ -4,7 +4,7 @@ float a, b, h, xpos, ypos, oxpos, oypos, t, ot, d, od;
 int centerX, centerY;
 
 void setup() {
-  size(2000, 2000);
+  size(800, 800);
   stroke(20);
   centerX = width/2;
   centerY = height/2;
@@ -17,7 +17,7 @@ void draw() {
   b = 100;
   h = mouseY;
 
-  for (int i=1; i<181; i+=1) {
+  for (int i=1; i<361; i+=1) {
     t = radians(i);
     ot = radians(i-1);
     d = a*t;
