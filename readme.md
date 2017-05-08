@@ -18,7 +18,11 @@ Then simply click run and move your mouse across the window!
 
 ## Save it!
 
-If you want to save an image, just press any key while processing is running and it will save the frame under `export`.
+If you want to save an image:
+-   Press `s` for vectorized image (PDF)
+-   Press any other key to save a rasterized image
+
+The current frame will be saved in the `export` directory.
 
 ## License
 

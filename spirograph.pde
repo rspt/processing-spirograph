@@ -1,7 +1,10 @@
 // https://github.com/rspt/processing-spirograph.git
 
+import processing.pdf.*;
+
 float a, b, h, xpos, ypos, oxpos, oypos, t, ot, d, od;
 int centerX, centerY;
+boolean record;
 
 void setup() {
   size(800, 800);
@@ -12,6 +15,11 @@ void setup() {
 
 void draw() {
   background(255);
+
+  if (record) {
+    // Note that #### will be replaced with the frame number. Fancy!
+    beginRecord(PDF, "export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".pdf"); 
+  }
 
   a = mouseX;
   b = 100;
@@ -31,8 +39,17 @@ void draw() {
 
     line(centerX+oxpos, centerY+oypos, centerX+xpos, centerY+ypos);
   }
+  
+  if (record) {
+    endRecord();
+    record = false;
+  }
 }
 
 void keyPressed(){
-  save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".jpg");
+  if (key == 's') {
+    record = true;
+  } else {
+    save("export/a" + int(a) + "_b" + int(b) + "_h" + int(h) + ".jpg");
+  };
 }
