@@ -7,8 +7,8 @@ int centerX, centerY;
 boolean record;
 
 void setup() {
-  size(800, 800);
-  stroke(20);
+  size(460, 460);
+  stroke(30);
   centerX = width/2;
   centerY = height/2;
 }
